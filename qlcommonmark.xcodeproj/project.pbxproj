@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9006D64F22D1911D00A12E76 /* cmark-gfm-core-extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9006D64922D1911D00A12E76 /* cmark-gfm-core-extensions.h */; };
+		9006D65022D1911D00A12E76 /* cmark-gfm-extension_api.h in Headers */ = {isa = PBXBuildFile; fileRef = 9006D64A22D1911D00A12E76 /* cmark-gfm-extension_api.h */; };
+		9006D65122D1911D00A12E76 /* cmark-gfm_version.h in Headers */ = {isa = PBXBuildFile; fileRef = 9006D64B22D1911D00A12E76 /* cmark-gfm_version.h */; };
+		9006D65222D1911D00A12E76 /* cmark-gfm-extensions_export.h in Headers */ = {isa = PBXBuildFile; fileRef = 9006D64C22D1911D00A12E76 /* cmark-gfm-extensions_export.h */; };
+		9006D65322D1911D00A12E76 /* cmark-gfm_export.h in Headers */ = {isa = PBXBuildFile; fileRef = 9006D64D22D1911D00A12E76 /* cmark-gfm_export.h */; };
+		9006D65422D1911D00A12E76 /* cmark-gfm.h in Headers */ = {isa = PBXBuildFile; fileRef = 9006D64E22D1911D00A12E76 /* cmark-gfm.h */; };
+		9006D66722D1914800A12E76 /* libcmark-gfm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9006D65F22D1914800A12E76 /* libcmark-gfm.a */; };
+		9006D66A22D1914800A12E76 /* libcmark-gfm-extensions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9006D66322D1914800A12E76 /* libcmark-gfm-extensions.a */; };
+		9006D66C22D20BE100A12E76 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 9006D66B22D20BE100A12E76 /* style.css */; };
+		901A1F2C22D76EA1007BE2C5 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 901A1F2B22D76EA1007BE2C5 /* LICENSE */; };
+		9036BE2822D0F296006CA790 /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 9036BE2722D0F296006CA790 /* GenerateThumbnailForURL.c */; };
+		9036BE2A22D0F296006CA790 /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 9036BE2922D0F296006CA790 /* GeneratePreviewForURL.c */; };
+		9036BE2C22D0F296006CA790 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 9036BE2B22D0F296006CA790 /* main.c */; };
+		9036BE3522D10929006CA790 /* QLCMFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9036BE3322D10929006CA790 /* QLCMFunctions.h */; };
+		9036BE3622D10929006CA790 /* QLCMFunctions.c in Sources */ = {isa = PBXBuildFile; fileRef = 9036BE3422D10929006CA790 /* QLCMFunctions.c */; };
+		90E7534522D1107700196FF9 /* tasklist.js in Resources */ = {isa = PBXBuildFile; fileRef = 90E7534222D1107700196FF9 /* tasklist.js */; };
+		90E7534622D1107700196FF9 /* color.css in Resources */ = {isa = PBXBuildFile; fileRef = 90E7534322D1107700196FF9 /* color.css */; };
+		90E7534722D1107700196FF9 /* layout.css in Resources */ = {isa = PBXBuildFile; fileRef = 90E7534422D1107700196FF9 /* layout.css */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9006D64922D1911D00A12E76 /* cmark-gfm-core-extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "cmark-gfm-core-extensions.h"; sourceTree = "<group>"; };
+		9006D64A22D1911D00A12E76 /* cmark-gfm-extension_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "cmark-gfm-extension_api.h"; sourceTree = "<group>"; };
+		9006D64B22D1911D00A12E76 /* cmark-gfm_version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "cmark-gfm_version.h"; sourceTree = "<group>"; };
+		9006D64C22D1911D00A12E76 /* cmark-gfm-extensions_export.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "cmark-gfm-extensions_export.h"; sourceTree = "<group>"; };
+		9006D64D22D1911D00A12E76 /* cmark-gfm_export.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "cmark-gfm_export.h"; sourceTree = "<group>"; };
+		9006D64E22D1911D00A12E76 /* cmark-gfm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "cmark-gfm.h"; sourceTree = "<group>"; };
+		9006D65F22D1914800A12E76 /* libcmark-gfm.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libcmark-gfm.a"; sourceTree = "<group>"; };
+		9006D66322D1914800A12E76 /* libcmark-gfm-extensions.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libcmark-gfm-extensions.a"; sourceTree = "<group>"; };
+		9006D66B22D20BE100A12E76 /* style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		901A1F2B22D76EA1007BE2C5 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		9036BE2422D0F296006CA790 /* qlcommonmark.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = qlcommonmark.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
+		9036BE2722D0F296006CA790 /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
+		9036BE2922D0F296006CA790 /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
+		9036BE2B22D0F296006CA790 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		9036BE2D22D0F296006CA790 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9036BE3322D10929006CA790 /* QLCMFunctions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QLCMFunctions.h; sourceTree = "<group>"; };
+		9036BE3422D10929006CA790 /* QLCMFunctions.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = QLCMFunctions.c; sourceTree = "<group>"; };
+		90566FB922DA3DAE00C128D7 /* build.bash */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build.bash; sourceTree = "<group>"; };
+		90566FBB22DA3DBB00C128D7 /* build.bash */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build.bash; sourceTree = "<group>"; };
+		90E7534222D1107700196FF9 /* tasklist.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = tasklist.js; sourceTree = "<group>"; };
+		90E7534322D1107700196FF9 /* color.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = color.css; sourceTree = "<group>"; };
+		90E7534422D1107700196FF9 /* layout.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = layout.css; sourceTree = "<group>"; };
+		90E7534822D11CA100196FF9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		90E7534A22D15DC800196FF9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		90E7534E22D248A100196FF9 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9036BE2122D0F296006CA790 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9006D66722D1914800A12E76 /* libcmark-gfm.a in Frameworks */,
+				9006D66A22D1914800A12E76 /* libcmark-gfm-extensions.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9006D64822D1911D00A12E76 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				9006D64922D1911D00A12E76 /* cmark-gfm-core-extensions.h */,
+				9006D64A22D1911D00A12E76 /* cmark-gfm-extension_api.h */,
+				9006D64B22D1911D00A12E76 /* cmark-gfm_version.h */,
+				9006D64C22D1911D00A12E76 /* cmark-gfm-extensions_export.h */,
+				9006D64D22D1911D00A12E76 /* cmark-gfm_export.h */,
+				9006D64E22D1911D00A12E76 /* cmark-gfm.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		9006D65922D1914800A12E76 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				9006D65F22D1914800A12E76 /* libcmark-gfm.a */,
+				9006D66322D1914800A12E76 /* libcmark-gfm-extensions.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		9036BE1A22D0F296006CA790 = {
+			isa = PBXGroup;
+			children = (
+				90E7534E22D248A100196FF9 /* .gitignore */,
+				90E7534822D11CA100196FF9 /* README.md */,
+				90E7534A22D15DC800196FF9 /* LICENSE */,
+				90566FBB22DA3DBB00C128D7 /* build.bash */,
+				90E7534022D10F0C00196FF9 /* cmark-gfm */,
+				9036BE2622D0F296006CA790 /* qlcommonmark */,
+				9036BE2522D0F296006CA790 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9036BE2522D0F296006CA790 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9036BE2422D0F296006CA790 /* qlcommonmark.qlgenerator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9036BE2622D0F296006CA790 /* qlcommonmark */ = {
+			isa = PBXGroup;
+			children = (
+				9036BE2722D0F296006CA790 /* GenerateThumbnailForURL.c */,
+				9036BE2922D0F296006CA790 /* GeneratePreviewForURL.c */,
+				9036BE2B22D0F296006CA790 /* main.c */,
+				9036BE2D22D0F296006CA790 /* Info.plist */,
+				9036BE3322D10929006CA790 /* QLCMFunctions.h */,
+				9036BE3422D10929006CA790 /* QLCMFunctions.c */,
+				90E7534122D1104600196FF9 /* Resources */,
+			);
+			path = qlcommonmark;
+			sourceTree = "<group>";
+		};
+		90E7534022D10F0C00196FF9 /* cmark-gfm */ = {
+			isa = PBXGroup;
+			children = (
+				90566FB922DA3DAE00C128D7 /* build.bash */,
+				9006D65922D1914800A12E76 /* lib */,
+				9006D64822D1911D00A12E76 /* include */,
+			);
+			path = "cmark-gfm";
+			sourceTree = "<group>";
+		};
+		90E7534122D1104600196FF9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9006D66B22D20BE100A12E76 /* style.css */,
+				90E7534422D1107700196FF9 /* layout.css */,
+				90E7534322D1107700196FF9 /* color.css */,
+				90E7534222D1107700196FF9 /* tasklist.js */,
+				901A1F2B22D76EA1007BE2C5 /* LICENSE */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9036BE1F22D0F296006CA790 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9006D65322D1911D00A12E76 /* cmark-gfm_export.h in Headers */,
+				9006D65022D1911D00A12E76 /* cmark-gfm-extension_api.h in Headers */,
+				9006D65422D1911D00A12E76 /* cmark-gfm.h in Headers */,
+				9036BE3522D10929006CA790 /* QLCMFunctions.h in Headers */,
+				9006D64F22D1911D00A12E76 /* cmark-gfm-core-extensions.h in Headers */,
+				9006D65222D1911D00A12E76 /* cmark-gfm-extensions_export.h in Headers */,
+				9006D65122D1911D00A12E76 /* cmark-gfm_version.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9036BE2322D0F296006CA790 /* qlcommonmark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9036BE3022D0F296006CA790 /* Build configuration list for PBXNativeTarget "qlcommonmark" */;
+			buildPhases = (
+				9036BE1F22D0F296006CA790 /* Headers */,
+				9036BE2022D0F296006CA790 /* Sources */,
+				9036BE2122D0F296006CA790 /* Frameworks */,
+				9036BE2222D0F296006CA790 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = qlcommonmark;
+			productName = qlcmarkgfm;
+			productReference = 9036BE2422D0F296006CA790 /* qlcommonmark.qlgenerator */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9036BE1B22D0F296006CA790 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				TargetAttributes = {
+					9036BE2322D0F296006CA790 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 9036BE1E22D0F296006CA790 /* Build configuration list for PBXProject "qlcommonmark" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9036BE1A22D0F296006CA790;
+			productRefGroup = 9036BE2522D0F296006CA790 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9036BE2322D0F296006CA790 /* qlcommonmark */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9036BE2222D0F296006CA790 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90E7534522D1107700196FF9 /* tasklist.js in Resources */,
+				901A1F2C22D76EA1007BE2C5 /* LICENSE in Resources */,
+				9006D66C22D20BE100A12E76 /* style.css in Resources */,
+				90E7534622D1107700196FF9 /* color.css in Resources */,
+				90E7534722D1107700196FF9 /* layout.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9036BE2022D0F296006CA790 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9036BE2822D0F296006CA790 /* GenerateThumbnailForURL.c in Sources */,
+				9036BE2A22D0F296006CA790 /* GeneratePreviewForURL.c in Sources */,
+				9036BE3622D10929006CA790 /* QLCMFunctions.c in Sources */,
+				9036BE2C22D0F296006CA790 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9036BE2E22D0F296006CA790 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9036BE2F22D0F296006CA790 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9036BE3122D0F296006CA790 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
+				INFOPLIST_FILE = qlcommonmark/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/QuickLook";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/cmark-gfm/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = localhost.qlcommonmark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Debug;
+		};
+		9036BE3222D0F296006CA790 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
+				INFOPLIST_FILE = qlcommonmark/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/QuickLook";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/cmark-gfm/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = localhost.qlcommonmark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9036BE1E22D0F296006CA790 /* Build configuration list for PBXProject "qlcommonmark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9036BE2E22D0F296006CA790 /* Debug */,
+				9036BE2F22D0F296006CA790 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9036BE3022D0F296006CA790 /* Build configuration list for PBXNativeTarget "qlcommonmark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9036BE3122D0F296006CA790 /* Debug */,
+				9036BE3222D0F296006CA790 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9036BE1B22D0F296006CA790 /* Project object */;
+}

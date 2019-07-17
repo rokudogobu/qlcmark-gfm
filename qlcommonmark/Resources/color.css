@@ -1,0 +1,103 @@
+/*
+ 
+ Copyright (c) 2019 rokudogobu
+ 
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ 
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ 
+ */
+
+:root {
+  --color-bg: rgb( var(--r-bg), var(--g-bg), var(--b-bg) );
+  --color-font: rgb( var(--r-font), var(--g-font), var(--b-font) );
+  
+  --color-frac-05: rgb(
+    calc( 0.05 * ( var(--r-font) - var(--r-bg) ) + var(--r-bg) ),
+    calc( 0.05 * ( var(--g-font) - var(--g-bg) ) + var(--g-bg) ),
+    calc( 0.05 * ( var(--b-font) - var(--b-bg) ) + var(--b-bg) )
+  );
+  
+  --color-frac-10: rgb(
+    calc( 0.10 * ( var(--r-font) - var(--r-bg) ) + var(--r-bg) ),
+    calc( 0.10 * ( var(--g-font) - var(--g-bg) ) + var(--g-bg) ),
+    calc( 0.10 * ( var(--b-font) - var(--b-bg) ) + var(--b-bg) )
+  );
+  
+  --color-frac-15: rgb(
+    calc( 0.15 * ( var(--r-font) - var(--r-bg) ) + var(--r-bg) ),
+    calc( 0.15 * ( var(--g-font) - var(--g-bg) ) + var(--g-bg) ),
+    calc( 0.15 * ( var(--b-font) - var(--b-bg) ) + var(--b-bg) )
+  );
+  
+  --color-frac-50: rgb(
+    calc( 0.50 * ( var(--r-font) - var(--r-bg) ) + var(--r-bg) ),
+    calc( 0.50 * ( var(--g-font) - var(--g-bg) ) + var(--g-bg) ),
+    calc( 0.50 * ( var(--b-font) - var(--b-bg) ) + var(--b-bg) )
+  );
+  
+  --color-frac-65: rgb(
+    calc( 0.65 * ( var(--r-font) - var(--r-bg) ) + var(--r-bg) ),
+    calc( 0.65 * ( var(--g-font) - var(--g-bg) ) + var(--g-bg) ),
+    calc( 0.65 * ( var(--b-font) - var(--b-bg) ) + var(--b-bg) )
+  );
+  
+  --color-frac-80: rgb(
+    calc( 0.80 * ( var(--r-font) - var(--r-bg) ) + var(--r-bg) ),
+    calc( 0.80 * ( var(--g-font) - var(--g-bg) ) + var(--g-bg) ),
+    calc( 0.80 * ( var(--b-font) - var(--b-bg) ) + var(--b-bg) )
+  );
+}
+
+body {
+  color: var(--color-font);
+  background-color:var(--color-bg);
+}
+
+h6 { color: var(--color-frac-65); }
+
+td,th {
+  border-color: var(--color-frac-15);
+}
+
+tbody > tr:nth-child(odd) {
+  background-color: var(--color-frac-05);
+}
+
+a {
+  color: var(--color-frac-80);
+}
+
+blockquote {
+  color: var(--color-frac-65);
+  border-left-color: var(--color-frac-50);
+}
+
+code {
+   background-color: var(--color-frac-10);
+}
+
+tr:nth-child(odd) code {
+  background-color: var(--color-frac-15);
+}
+
+pre {
+  border-color: var(--color-frac-15);
+  background-color: var(--color-frac-05);
+}
+
+pre > code {
+  background-color: transparent;
+}
+
+hr {
+ border-color: var(--color-frac-65);
+}

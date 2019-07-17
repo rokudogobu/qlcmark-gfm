@@ -1,0 +1,159 @@
+/*
+ 
+ Copyright (c) 2019 rokudogobu
+ 
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ 
+ http://www.apache.org/licenses/LICENSE-2.0
+ 
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ 
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: var(--font-size);
+    
+    --line-height: calc(1.75*var(--font-size));
+    --line-height-50:  calc(0.50*var(--line-height));
+    --line-height-75:  calc(0.75*var(--line-height));
+    --line-height-100: calc(1.00*var(--line-height));
+    --line-height-125: calc(1.25*var(--line-height));
+    --line-height-150: calc(1.50*var(--line-height));
+    --line-height-200: calc(2.00*var(--line-height));
+}
+
+body {
+    line-height : var(--line-height-100);
+    max-width   : 54rem;
+    min-width   : 40rem;
+    margin      : 0 auto;
+    padding     : 2.5rem 7.5rem;
+}
+
+body > :first-child {
+    margin-top: 0;
+}
+
+/* heading */
+
+h1 { font-size: 2rem;    }
+h2 { font-size: 1.74rem; }
+h3 { font-size: 1.52rem; }
+h4 { font-size: 1.32rem; }
+h5 { font-size: 1.15rem; }
+h6 { font-size: 1.15rem; }
+
+/*
+h1 { font-size: 2.5rem;  }
+h2 { font-size: 2.08rem; }
+h3 { font-size: 1.73rem; }
+h4 { font-size: 1.44rem; }
+h5 { font-size: 1.20rem; }
+h6 { font-size: 1.20rem; }
+*/
+
+/*
+ h1 { font-size: 2rem;    }
+ h2 { font-size: 1.78rem; }
+ h3 { font-size: 1.59rem; }
+ h4 { font-size: 1.41rem; }
+ h5 { font-size: 1.26rem; }
+ h6 { font-size: 1.12rem; }
+ */
+
+h1,h2 { line-height: 1.5em; }
+h3,h4 { line-height: 1.35em; }
+h5,h6 { line-height: 1.25em; }
+
+h1, h2 { margin-top: var(--line-height-150) !important; }
+h3, h4 { margin-top: var(--line-height-125) !important; }
+h5, h6 { margin-top: var(--line-height-125) !important; }
+
+h1 + h1, h1 + h2, h1 + h3, h1 + h4, h1 + h5, h1 + h6,
+h2 + h1, h2 + h2, h2 + h3, h2 + h4, h2 + h5, h2 + h6,
+h3 + h1, h3 + h2, h3 + h3, h3 + h4, h3 + h5, h3 + h6,
+h4 + h1, h4 + h2, h4 + h3, h4 + h4, h4 + h5, h4 + h6,
+h5 + h1, h5 + h2, h5 + h3, h5 + h4, h5 + h5, h5 + h6,
+h6 + h1, h6 + h2, h6 + h3, h6 + h4, h6 + h5, h6 + h6 {
+    margin-top: var(--line-height-75) !important;
+}
+
+p, pre, blockquote, hr, li, li p + p {
+    margin-top: var(--line-height-50);
+}
+
+table {
+    margin: auto;
+    margin-top: var(--line-height-50);
+}
+
+p + p, pre + pre, ol + ol, ul + ul, ol + ul, ul + ol {
+    margin-top: var(--line-height-100);
+}
+
+ul, ol, li > :first-child {
+    margin-top: 0;
+}
+
+img {
+    margin: auto:
+    margin-top: var(--line-height-50);
+    max-width: 100%;
+}
+
+blockquote {
+    padding: 0 1rem;
+}
+
+/* Table */
+
+td,th {
+    padding: 0.25rem 1.25rem;
+}
+
+/* List and Task List */
+
+ul, ol, ul.tasklist ul.tasklist {
+    padding-left: 1.5rem;
+}
+
+ul.tasklist {
+    padding-left: 0;
+}
+
+ul.tasklist > li > input {
+    margin-right: 0.5rem;
+}
+
+/* code */
+
+code {
+    padding: 0.2em 0.5em;
+    /* margin: 0 0.1em; */
+}
+
+pre {
+    padding: var(--line-height-50) 1em;
+}
+
+pre > code {
+    padding: 0;
+    margin: 0;
+}
+
+/* emphasis */
+
+em, strong {
+    font-size: 1.05em;
+}

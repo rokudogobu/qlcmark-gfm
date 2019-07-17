@@ -1,0 +1,10 @@
+
+.DS_Store
+
+xcuserdata/
+project.xcworkspace/
+xcuserdata/
+build/
+
+/cmark-gfm/*
+!/cmark-gfm/build.bash
