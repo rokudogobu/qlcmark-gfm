@@ -8,3 +8,5 @@ build/
 
 /cmark-gfm/*
 !/cmark-gfm/build.bash
+
+*.glgenerator/
