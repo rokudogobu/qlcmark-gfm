@@ -368,7 +368,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/cmark-gfm/lib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = localhost.qlcommonmark;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.rokudogobu.qlcommonmark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = qlgenerator;
 			};
@@ -387,7 +387,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/cmark-gfm/lib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = localhost.qlcommonmark;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.rokudogobu.qlcommonmark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = qlgenerator;
 			};
