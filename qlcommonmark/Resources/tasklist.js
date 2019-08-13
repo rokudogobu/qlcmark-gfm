@@ -17,41 +17,29 @@
  */
 
 document.addEventListener('DOMContentLoaded', function(){
-	var uls = document.getElementsByTagName('ul');
-	for ( var i = 0; i < uls.length; i++ ) {
-		var ul = uls.item(i);
-		if ( ul.childElementCount == 0 ) continue;
-		
-		var is_tasklist = true;
-		var lis = ul.children;
-		for ( var j = 0; j < lis.length; j++ ) {
-			var li = lis.item(j);
-			var is_taskitem = false;
-			do {
-				if ( li.tagName != 'LI'        ) break;
-				if ( li.childElementCount == 0 ) break;
-				
-				var inputs = li.children;
-				for ( var k = 0; k < inputs.length; k++ ) {
-					var input = inputs.item( k );
-                    
-					if ( input.tagName != 'INPUT'                   ) continue;
-					if ( ! input.hasAttribute( 'disabled' )         ) continue;
-					if ( input.getAttribute( 'type' ) != 'checkbox' ) continue;
-                    
-					is_taskitem = true;
-					break;
-				}
-			} while ( false );
-
-			if ( ! is_taskitem ) {
-				is_tasklist = false;
-				break;
-			}
-		}
+	Array.from( document.getElementsByTagName( 'ul' ) ).forEach( ( ul ) => {
+		let is_tasklist = Array.from( ul.children ).reduce( ( flag, li ) => {
+			if ( ! flag                                                      ) return false;
+			if ( ! li.tagName == 'LI'                                        ) return false;
+			if ( ! li.childNodes.length >= 2                                 ) return false;
+			if ( ! li.childNodes[0].nodeType == Node.ELEMENT_NODE            ) return false;
+			if ( ! li.childNodes[0].nodeName == 'INPUT'                      ) return false;
+			if ( ! li.firstElementChild.hasAttribute( 'disabled' )           ) return false;
+			if ( ! li.firstElementChild.getAttribute( 'type' ) == 'checkbox' ) return false;
+			if ( ! li.childNodes[1].nodeType == Node.TEXT_NODE               ) return false;
+			return true;
+		}, true );
 		
 		if ( is_tasklist ) {
-			ul.classList.add('tasklist');
+			ul.classList.add( 'tasklist' ); 
+			Array.from( ul.children ).forEach( ( li ) => {
+				let label = document.createElement( 'label' );
+				label.innerHTML = li.childNodes[1].nodeValue;
+				li.replaceChild( label, li.childNodes[1] );
+				li.classList.add( 'tasklistitem' );
+				li.children[0].classList.add( 'tasklistitem-checkbox' );
+				li.children[1].classList.add( 'tasklistitem-label' );
+			} );
 		}
-	}
+	} );
 });
