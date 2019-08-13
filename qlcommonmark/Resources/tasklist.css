@@ -1,0 +1,37 @@
+.tasklistitem {
+  position: relative;
+}
+
+.tasklistitem-checkbox {
+  display: none;
+}
+
+.tasklistitem-label {
+  position: relative;
+  padding-left: 1.8em;
+}
+
+.tasklistitem-label::before, 
+.tasklistitem-label::after {
+  display: block;
+  position: absolute;
+  content: '';
+}
+
+.tasklistitem-label::before {
+  left: .1em;
+  top: .1em;
+  width: .8em;
+  height: .8em;
+  border: 2px solid var(--color-font);
+}
+
+:checked + .tasklistitem-label::after {
+  top: .35em;
+  left: .3em;
+  width: .55em;
+  height: .25em;
+  border-left: 3px solid var(--color-font);
+  border-bottom: 3px solid var(--color-font);
+  transform: rotate(-45deg);
+}

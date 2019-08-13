@@ -25,6 +25,7 @@
 		90E7534522D1107700196FF9 /* tasklist.js in Resources */ = {isa = PBXBuildFile; fileRef = 90E7534222D1107700196FF9 /* tasklist.js */; };
 		90E7534622D1107700196FF9 /* color.css in Resources */ = {isa = PBXBuildFile; fileRef = 90E7534322D1107700196FF9 /* color.css */; };
 		90E7534722D1107700196FF9 /* layout.css in Resources */ = {isa = PBXBuildFile; fileRef = 90E7534422D1107700196FF9 /* layout.css */; };
+		AC004A9A2302AE92009FB187 /* tasklist.css in Resources */ = {isa = PBXBuildFile; fileRef = AC004A992302AE92009FB187 /* tasklist.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		90E7534822D11CA100196FF9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		90E7534A22D15DC800196FF9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		90E7534E22D248A100196FF9 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		AC004A992302AE92009FB187 /* tasklist.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = tasklist.css; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 		90E7534122D1104600196FF9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AC004A992302AE92009FB187 /* tasklist.css */,
 				9006D66B22D20BE100A12E76 /* style.css */,
 				90E7534422D1107700196FF9 /* layout.css */,
 				90E7534322D1107700196FF9 /* color.css */,
@@ -220,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC004A9A2302AE92009FB187 /* tasklist.css in Resources */,
 				90E7534522D1107700196FF9 /* tasklist.js in Resources */,
 				901A1F2C22D76EA1007BE2C5 /* LICENSE in Resources */,
 				9006D66C22D20BE100A12E76 /* style.css in Resources */,

@@ -31,6 +31,7 @@
 #define kQLCMResourceNameLayoutCSS      CFSTR( "layout.css" )
 #define kQLCMResourceNameColorCSS       CFSTR( "color.css" )
 #define kQLCMResourceNameTaskListJS     CFSTR( "tasklist.js" )
+#define kQLCMResourceNameTaskListCSS    CFSTR( "tasklist.css" )
 #define kQLCMMimeTypeCSS                CFSTR( "text/css" )
 #define kQLCMMimeTypeJS                 CFSTR( "text/javascript" )
 #define kQLCMMimeTypeHTML               CFSTR( "text/html" )
@@ -81,7 +82,7 @@ static int __opts = CMARK_OPT_DEFAULT
 //                    | CMARK_OPT_LIBERAL_HTML_TAG
 ;
 
-#define kQLCMHTMLDataAttachmentsCount 4
+#define kQLCMHTMLDataAttachmentsCount 5
 
 // struct __attachment_s {
 //     CFStringRef name;
@@ -228,14 +229,16 @@ CFDictionaryRef QLCMCreateHTMLDataPropertiesFromGeneratorBundle( CFBundleRef bun
         ( void * )kQLCMResourceNameLayoutCSS,
         ( void * )kQLCMResourceNameStyleCSS,
         ( void * )kQLCMResourceNameColorCSS,
-        ( void * )kQLCMResourceNameTaskListJS
+        ( void * )kQLCMResourceNameTaskListJS,
+        ( void * )kQLCMResourceNameTaskListCSS
     };
     
     void * atchValues[kQLCMHTMLDataAttachmentsCount] = {
         ( void * )QLCMCreateAttachmentFromResource( bundle, kQLCMResourceNameLayoutCSS, kQLCMMimeTypeCSS, kQLCMEncodingNameUTF8 ),
         ( void * )QLCMCreateAttachmentFromResource( bundle, kQLCMResourceNameStyleCSS, kQLCMMimeTypeCSS, kQLCMEncodingNameUTF8 ),
         ( void * )QLCMCreateAttachmentFromResource( bundle, kQLCMResourceNameColorCSS, kQLCMMimeTypeCSS, kQLCMEncodingNameUTF8 ),
-        ( void * )QLCMCreateAttachmentFromResource( bundle, kQLCMResourceNameTaskListJS, kQLCMMimeTypeJS, kQLCMEncodingNameUTF8 )
+        ( void * )QLCMCreateAttachmentFromResource( bundle, kQLCMResourceNameTaskListJS, kQLCMMimeTypeJS, kQLCMEncodingNameUTF8 ),
+        ( void * )QLCMCreateAttachmentFromResource( bundle, kQLCMResourceNameTaskListCSS, kQLCMMimeTypeCSS, kQLCMEncodingNameUTF8 ),
     };
     
     CFDictionaryRef atchs =  CFDictionaryCreate( kCFAllocatorDefault,
@@ -364,6 +367,7 @@ CFStringRef QLCMCreateHTMLStringFromCommonMarkString( CFStringRef str ) {
                                                 "<link rel=\"stylesheet\" type=\"%@\" href=\"%@:%@\" />"
                                                 "<link rel=\"stylesheet\" type=\"%@\" href=\"%@:%@\" />"
                                                 "<script type=\"%@\" src=\"%@:%@\"></script>"
+                                                "<link rel=\"stylesheet\" type=\"%@\" href=\"%@:%@\" />"
                                               "</head>"
                                               "<body>"
                                                 "%@"
@@ -377,6 +381,7 @@ CFStringRef QLCMCreateHTMLStringFromCommonMarkString( CFStringRef str ) {
                                         kQLCMMimeTypeCSS, kQLPreviewContentIDScheme, kQLCMResourceNameLayoutCSS,
                                         kQLCMMimeTypeCSS, kQLPreviewContentIDScheme, kQLCMResourceNameColorCSS,
                                         kQLCMMimeTypeJS, kQLPreviewContentIDScheme, kQLCMResourceNameTaskListJS,
+                                        kQLCMMimeTypeCSS, kQLPreviewContentIDScheme, kQLCMResourceNameTaskListCSS,
                                         content );
                                         
         CFRelease( content );
