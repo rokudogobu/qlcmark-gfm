@@ -1,4 +1,4 @@
-# QLCmmonMark
+# qlcmark-gfm
 
 QuickLook Plugin for [CommonMark](https://commonmark.org) documents by using [cmark-gfm](https://github.com/github/cmark-gfm).
 
@@ -13,14 +13,14 @@ QuickLook Plugin for [CommonMark](https://commonmark.org) documents by using [cm
 
 ## Installation
 
-To install QLCommonMark, please copy or move `qlcommonmark.qlgenerator` to `~/Library/QuickLook` and execute following command in Terminal.app.
+To install qlcmark-gfm, please copy or move `qlcmark-gfm.qlgenerator` to `~/Library/QuickLook` and execute following command in Terminal.app.
     
     $ qlmanage -r
 
 If you want to build from source, please make sure `cmake` is installed to your mac, and then follow the steps below.
 
-    $ git clone https://github.com/rokudogobu/QLCommonMark.git
-    $ cd QLCommonMark
+    $ git clone https://github.com/rokudogobu/qlcmark-gfm.git
+    $ cd qlcmark-gfm
     $ bash build.bash
 
 Please build at a directory which is NOT synced with iCloud, otherwise a codesign process may fail.

@@ -68,7 +68,7 @@ bash cmark-gfm/build.bash
 
 [ -e build ] && rm -rf build
 
-xattr -rc qlcommonmark
+xattr -rc qlcmark-gfm
 
 if [ "${FLAG_INSTALL:-0}" -eq 1 ]; then
   xcodebuild install SYMROOT="$( pwd )/build" DSTROOT=/ 

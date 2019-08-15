@@ -24,23 +24,23 @@
 	<key>CFBundleName</key>
 	<string>$(PRODUCT_NAME)</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.1.0</string>
+	<string>1.2.0</string>
 	<key>CFBundleVersion</key>
-	<string>3</string>
+	<string>4</string>
 	<key>CFPlugInDynamicRegisterFunction</key>
 	<string></string>
 	<key>CFPlugInDynamicRegistration</key>
 	<string>NO</string>
 	<key>CFPlugInFactories</key>
 	<dict>
-		<key>9C61CBF0-ACFA-4183-B197-927165B2A3CB</key>
+		<key>DA08056F-CD5A-4952-AD06-6BD5BBCA997E</key>
 		<string>QuickLookGeneratorPluginFactory</string>
 	</dict>
 	<key>CFPlugInTypes</key>
 	<dict>
 		<key>5E2D9680-5022-40FA-B806-43349622E5B9</key>
 		<array>
-			<string>9C61CBF0-ACFA-4183-B197-927165B2A3CB</string>
+			<string>DA08056F-CD5A-4952-AD06-6BD5BBCA997E</string>
 		</array>
 	</dict>
 	<key>CFPlugInUnloadFunction</key>
