@@ -2,7 +2,7 @@
 
 QuickLook Plugin for [CommonMark](https://commonmark.org) documents by using [cmark-gfm](https://github.com/github/cmark-gfm).
 
-![screenshot](https://github.com/rokudogobu/QLCommonMark/blob/images/darklight.png?raw=true)
+![screenshot](https://github.com/rokudogobu/qlcmark-gfm/blob/images/darklight.png?raw=true)
 
 ## Supported Features
 
@@ -24,6 +24,19 @@ If you want to build from source, please make sure `cmake` is installed to your 
     $ bash build.bash
 
 Please build at a directory which is NOT synced with iCloud, otherwise a codesign process may fail.
+
+## Setting Preferences
+
+You can change color mode and font-size by executing following command:
+
+    $ defaults write io.github.rokudogobu.qlcmark-gfm <key> -string <value>
+
+The keys and values are listed below:
+
+| key | default | possible values |
+|:---:|:---:|:---:|
+| mode | `auto` | `light`, `dark` or others ( interpreted as `auto` ) |
+| font-size | 14px | any CSS values for `font-size` property |
 
 ## License
 

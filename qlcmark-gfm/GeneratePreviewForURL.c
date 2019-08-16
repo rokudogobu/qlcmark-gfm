@@ -21,6 +21,7 @@
 #include <QuickLook/QuickLook.h>
 
 #include "QLCMFunctions.h"
+#include "QLCMPreferences.h"
 
 OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview, CFURLRef url, CFStringRef contentTypeUTI, CFDictionaryRef options);
 void CancelPreviewGeneration(void *thisInterface, QLPreviewRequestRef preview);
@@ -33,6 +34,8 @@ void CancelPreviewGeneration(void *thisInterface, QLPreviewRequestRef preview);
 
 OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview, CFURLRef url, CFStringRef contentTypeUTI, CFDictionaryRef options)
 {
+    QLCMPreferencesLoadForPreviewRequest( preview );
+    
     CFDataRef       data        = QLCMCreateHTMLDataFromCommonMarkFile( url );
     CFDictionaryRef properties  = QLCMCreateHTMLDataPropertiesForPreviewRequest( preview );
     if ( data && properties ) {

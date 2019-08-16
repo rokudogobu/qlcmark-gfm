@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9001911C230689EB004C5D1D /* QLCMPreferences.h in Headers */ = {isa = PBXBuildFile; fileRef = 9001911A230689EB004C5D1D /* QLCMPreferences.h */; };
+		9001911D230689EB004C5D1D /* QLCMPreferences.c in Sources */ = {isa = PBXBuildFile; fileRef = 9001911B230689EB004C5D1D /* QLCMPreferences.c */; };
 		903509432305944A00A3F053 /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 903509422305944A00A3F053 /* GenerateThumbnailForURL.c */; };
 		903509452305944A00A3F053 /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 903509442305944A00A3F053 /* GeneratePreviewForURL.c */; };
 		903509472305944A00A3F053 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 903509462305944A00A3F053 /* main.c */; };
@@ -29,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9001911A230689EB004C5D1D /* QLCMPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLCMPreferences.h; sourceTree = "<group>"; };
+		9001911B230689EB004C5D1D /* QLCMPreferences.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = QLCMPreferences.c; sourceTree = "<group>"; };
 		9035093F2305944A00A3F053 /* qlcmark-gfm.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "qlcmark-gfm.qlgenerator"; sourceTree = BUILT_PRODUCTS_DIR; };
 		903509422305944A00A3F053 /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
 		903509442305944A00A3F053 /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
@@ -98,6 +102,8 @@
 				903509482305944A00A3F053 /* Info.plist */,
 				903509502305958F00A3F053 /* QLCMFunctions.h */,
 				9035094F2305958F00A3F053 /* QLCMFunctions.c */,
+				9001911A230689EB004C5D1D /* QLCMPreferences.h */,
+				9001911B230689EB004C5D1D /* QLCMPreferences.c */,
 				90350954230595B200A3F053 /* Resources */,
 			);
 			path = "qlcmark-gfm";
@@ -161,6 +167,7 @@
 				903509532305958F00A3F053 /* QLCMFunctions.h in Headers */,
 				903509842305977200A3F053 /* cmark-gfm-core-extensions.h in Headers */,
 				903509872305977200A3F053 /* cmark-gfm-extensions_export.h in Headers */,
+				9001911C230689EB004C5D1D /* QLCMPreferences.h in Headers */,
 				903509862305977200A3F053 /* cmark-gfm_version.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +246,7 @@
 			files = (
 				903509432305944A00A3F053 /* GenerateThumbnailForURL.c in Sources */,
 				903509452305944A00A3F053 /* GeneratePreviewForURL.c in Sources */,
+				9001911D230689EB004C5D1D /* QLCMPreferences.c in Sources */,
 				903509522305958F00A3F053 /* QLCMFunctions.c in Sources */,
 				903509472305944A00A3F053 /* main.c in Sources */,
 			);

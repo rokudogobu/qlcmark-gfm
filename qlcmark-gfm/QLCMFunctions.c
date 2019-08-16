@@ -23,6 +23,8 @@
 #include <CoreFoundation/CoreFoundation.h>
 #include <QuickLook/QuickLook.h>
 
+#include "QLCMPreferences.h"
+
 #include "cmark-gfm.h"
 #include "cmark-gfm-extension_api.h"
 #include "cmark-gfm-core-extensions.h"
@@ -324,16 +326,9 @@ CFStringRef QLCMCreateHTMLContentStringFromCommonMarkString( CFStringRef str ) {
 
 CFStringRef QLCMCreateHTMLStringFromCommonMarkString( CFStringRef str ) {
     
-    // these pre-defined colors are useful for adopting to dark mode,
-    // but they always return colors for light mode when called in quicklook plugin.
-    //
-    // NSColor * fontColor = [ NSColor.textColor colorUsingColorSpace:NSColorSpace.deviceRGBColorSpace ];
-    // NSColor * bgColor   = [ NSColor.windowBackgroundColor colorUsingColorSpace:NSColorSpace.deviceRGBColorSpace ];
-    
     struct __colorrgb_s fontColor, bgColor;
     
-    CFStringRef interfaceStyle = CFPreferencesCopyAppValue( CFSTR( "AppleInterfaceStyle" ), kCFPreferencesCurrentApplication );
-    if ( interfaceStyle && CFStringCompare( interfaceStyle, CFSTR( "Dark" ), kCFCompareCaseInsensitive ) == kCFCompareEqualTo ) {
+    if ( QLCMPreferencesIsModeDark() ) {
         fontColor = __rgb_white;
         bgColor   = __rgb_dark;
     } else {
@@ -354,7 +349,7 @@ CFStringRef QLCMCreateHTMLStringFromCommonMarkString( CFStringRef str ) {
                                                 "<meta charset=\"UTF-8\" />"
                                                 "<style type=\"text/css\">"
                                                   ":root {"
-                                                    "--font-size: %dpx;"
+                                                    "--font-size: %@;"
                                                     "--r-font: %.2f%%;"
                                                     "--g-font: %.2f%%;"
                                                     "--b-font: %.2f%%;"
@@ -374,7 +369,7 @@ CFStringRef QLCMCreateHTMLStringFromCommonMarkString( CFStringRef str ) {
                                               "</body>"
                                             "</html>"
                                         ),
-                                        14,
+                                        QLCMPreferencesGetFontSize(),
                                         ((float)fontColor.r)/255*100, ((float)fontColor.g)/255*100, ((float)fontColor.b)/255*100,
                                         ((float)bgColor.r)/255*100, ((float)bgColor.g)/255*100, ((float)bgColor.b)/255*100,
                                         kQLCMMimeTypeCSS, kQLPreviewContentIDScheme, kQLCMResourceNameStyleCSS,
