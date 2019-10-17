@@ -72,12 +72,11 @@ pre {
     border-style  : solid;
     border-radius : 4px;
     white-space   : pre;
-    white-space   : pre-wrap;
-    word-wrap     : break-word;
+    overflow-x    : scroll; 
 }
 
 pre > code {
-    border: none;
+  border          : none;
 }
 
 em      { font-style  : italic; }
