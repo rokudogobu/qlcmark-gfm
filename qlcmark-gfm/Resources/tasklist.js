@@ -20,13 +20,13 @@ document.addEventListener('DOMContentLoaded', function(){
 	Array.from( document.getElementsByTagName( 'ul' ) ).forEach( ( ul ) => {
 		let is_tasklist = Array.from( ul.children ).reduce( ( flag, li ) => {
 			if ( ! flag                                                      ) return false;
-			if ( ! li.tagName == 'LI'                                        ) return false;
+			if (   li.tagName != 'LI'                                        ) return false;
 			if ( ! li.childNodes.length >= 2                                 ) return false;
-			if ( ! li.childNodes[0].nodeType == Node.ELEMENT_NODE            ) return false;
-			if ( ! li.childNodes[0].nodeName == 'INPUT'                      ) return false;
+			if (   li.childNodes[0].nodeType != Node.ELEMENT_NODE            ) return false;
+			if (   li.childNodes[0].nodeName != 'INPUT'                      ) return false;
 			if ( ! li.firstElementChild.hasAttribute( 'disabled' )           ) return false;
-			if ( ! li.firstElementChild.getAttribute( 'type' ) == 'checkbox' ) return false;
-			if ( ! li.childNodes[1].nodeType == Node.TEXT_NODE               ) return false;
+			if (   li.firstElementChild.getAttribute( 'type' ) != 'checkbox' ) return false;
+			if (   li.childNodes[1].nodeType != Node.TEXT_NODE               ) return false;
 			return true;
 		}, true );
 		

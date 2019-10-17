@@ -38,6 +38,12 @@
     calc( 0.15 * ( var(--b-font) - var(--b-bg) ) + var(--b-bg) )
   );
   
+  --color-frac-25: rgb(
+    calc( 0.25 * ( var(--r-font) - var(--r-bg) ) + var(--r-bg) ),
+    calc( 0.25 * ( var(--g-font) - var(--g-bg) ) + var(--g-bg) ),
+    calc( 0.25 * ( var(--b-font) - var(--b-bg) ) + var(--b-bg) )
+  );
+  
   --color-frac-50: rgb(
     calc( 0.50 * ( var(--r-font) - var(--r-bg) ) + var(--r-bg) ),
     calc( 0.50 * ( var(--g-font) - var(--g-bg) ) + var(--g-bg) ),
@@ -48,6 +54,12 @@
     calc( 0.65 * ( var(--r-font) - var(--r-bg) ) + var(--r-bg) ),
     calc( 0.65 * ( var(--g-font) - var(--g-bg) ) + var(--g-bg) ),
     calc( 0.65 * ( var(--b-font) - var(--b-bg) ) + var(--b-bg) )
+  );
+  
+  --color-frac-75: rgb(
+    calc( 0.75 * ( var(--r-font) - var(--r-bg) ) + var(--r-bg) ),
+    calc( 0.75 * ( var(--g-font) - var(--g-bg) ) + var(--g-bg) ),
+    calc( 0.75 * ( var(--b-font) - var(--b-bg) ) + var(--b-bg) )
   );
   
   --color-frac-80: rgb(

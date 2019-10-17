@@ -39,17 +39,17 @@
 .tasklistitem-label::before {
   left: .1em;
   top: .1em;
-  width: .8em;
-  height: .8em;
-  border: 2px solid var(--color-font);
+  width: .65em;
+  height: .65em;
+  border: 2px solid var(--color-frac-25);
 }
 
 :checked + .tasklistitem-label::after {
-  top: .35em;
-  left: .3em;
-  width: .55em;
+  top: .275em;
+  left: .225em;
+  width: .60em;
   height: .25em;
-  border-left: 3px solid var(--color-font);
-  border-bottom: 3px solid var(--color-font);
+  border-left: 2px solid var(--color-frac-75);
+  border-bottom: 2px solid var(--color-frac-75);
   transform: rotate(-45deg);
 }
