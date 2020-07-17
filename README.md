@@ -13,8 +13,14 @@ QuickLook Plugin for [CommonMark](https://commonmark.org) documents by using [cm
 
 ## Installation
 
-To install qlcmark-gfm, please copy or move `qlcmark-gfm.qlgenerator` to `~/Library/QuickLook` and execute following command in Terminal.app.
-    
+Via Homebrew
+
+    $ # installed to ~/Library/QuickLook
+    $ brew cask install https://raw.githubusercontent.com/rokudogobu/qlcmark-gfm/master/qlcmark-gfm.rb
+    $ xattr -r -d com.apple.quarantine ~/Library/QuickLook/qlcmark-gfm.qlgenerator
+
+Optionally, clear QuickLook client's generator cache
+
     $ qlmanage -r
 
 If you want to build from source, please make sure `cmake` is installed to your mac, and then follow the steps below.
