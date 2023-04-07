@@ -16,7 +16,7 @@
 
 set -e
 
-url=https://github.com/github/cmark-gfm/archive/0.29.0.gfm.0.zip
+url=https://github.com/github/cmark-gfm/archive/0.29.0.gfm.11.zip
 
 [ -n "$CMAKE" ] || CMAKE="$( which cmake || echo )"
 [ -x "$CMAKE" ] || { echo "*** error: 'cmake' not found. you must install it first, and then run this script again." >&2; exit 1; }
